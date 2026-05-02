@@ -1,0 +1,125 @@
+História do desenvolvimento web
+
+1945
+Vannevar Bush
+Memex
+
+todo conhecimento esquece
+
+1960 - Theodor (Ted) Nelson 
+Projeto Xanadu
+ Hipertexto
+ Hipermídia
+Xanadoc
+ - documentos paralelos interconectados
+ - serie de documentos visotos simultaneamentes tridimensionais
+ - entrada de informacao unica
+
+arquitetura cliente servidor
+	browser (navegador) <---requisicoes---> servidor (hospeda a informacao e disponibiliza por links)
+	 requisicao baixa a copia do servidor no browser
+
+Front-end
+ - diagramacao, criar paginas e disponibilizar
+ - css, html
+
+--------------------------------------------------------------------------------------------------------
+
+Tag
+<h1>				</h1>
+tag de abertura		tag de fechamento
+
+Titulos
+<hl>....</hl>
+<h6>...</h6>
+Headings (titulos) de <hl> até <h6>
+
+parågrafos
+<p> ....< /p>
+Paragraph (parágrafo)
+
+quebra de linha
+<br>
+Line break (Quebra de linha)
+
+--
+<hr>
+Horizontal Rules (Linha horzontal)
+--
+
+listas
+Tipos de listas
+
+Listas não ordenadas
+· HTML
+· CSS
+· JavaScript
+
+Listas ordenadas
+1. HTML
+2. CSS
+3. JavaScript
+
+--------------------------------------------------------------------------------------------------------
+
+links
+<a href="url">Texto</a>
+a - anchor, ancorar
+
+Imagens
+<img src="url" alt="alternatetext">
+
+Tabelas
+	<table> <!--Corpo da tabela-->
+		<th>titulo</th>
+		<tr>cria linha</tr>
+		<td> cria coluna</td> - elementos dentro da celula
+	</table>
+
+Mesclagem de células
+ - Colspan -> para mesclar colunas
+ - Rowspan -> para mesclar linhas
+	
+--------------------------------------------------------------------------------------------------------
+Formulários
+
+<form>
+.
+elementos
+.
+</form>
+	metodos do <form>
+		action="" 
+			arquivo para enviar o formulario para um email, podendo ser php
+		method=""
+			metodo de envio
+				get - aparece na barra de navegacao 
+				post - nao aparece na barra do navegador, oculto
+<input type="text">
+	Exibe um campo de entrada de texto de linha única
+<input type="radio">
+	Exibe um botao de opçao (para selecionar uma das muitas opções)
+<input type="checkbox">
+	Exibe uma caixa de selecao (para selecionar zero ou mais de muitas opcoes)
+<select></select>
+	Cria uma lista suspensa.
+<input type="buttor">
+	Exibe um botão clicável
+<textarea>
+	Insere uma area de texto para o usuario digitar textos.
+</textarea>
+	
+--------------------------------------------------------------------------------------------------------
+
+Mesclagem de células
+ - Colspan -> para mesclar colunas
+ - Rowspan -> para mesclar linhas
+
+Acessibilidade em Tabelas
+ - Caption -> título da tabela
+ - Summary -> descrever o objetivo da tabela
+ - <thead> para os cabeçalhos da tabela
+ - <tfoot> para o rodapé da tabela
+ - <tbody> para o corpo da tabela
+
+	
