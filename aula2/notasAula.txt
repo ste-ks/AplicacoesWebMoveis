@@ -1,0 +1,7 @@
+CSS - Cascading Style Sheets
+
+sintaxe
+
+selector    declaration     declaration
+h1          {color: blue;   font-size:  12px}
+            propery:value   propery     value
