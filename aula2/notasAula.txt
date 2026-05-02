@@ -5,3 +5,99 @@ sintaxe
 selector    declaration     declaration
 h1          {color: blue;   font-size:  12px}
             propery:value   propery     value
+
+seletores
+
+Elemento
+p{ <!--Paragrafo-->
+    text-align: center;
+    color: red;
+}
+
+
+class
+    comeca com ponto
+.p{
+    text-align: center;
+    color: blue;
+}
+
+Id
+    unico
+#p {
+    text-align: center;
+    color: green;
+}
+
+Universal
+    aplica em toda pagina html
+*{
+    text-align: center;
+    color: blue;
+}
+
+Interno
+ - dentro do arquivi html em Style, colocado no head
+
+Externo
+ - arquivo somente para o css chamado dentro do html no head
+
+    <head>
+    <link rel="stylesheet" href="mystyle.css">
+    </head>
+
+Inline
+ - inserido diretamente na tag
+    <h1 style="color:blue;text-align:center;">Título</h1>
+    <p style="color:red;">Parágrafo .< /p>
+
+-------------------------------------------------------------------------------------------------------
+Comentários
+<style>
+    /* Comentários* /
+    color: red;
+</style>
+
+Cores
+<head>
+    <style>
+    body {
+        background-color: black;
+        color: white;
+    }
+    </style>
+</head>
+
+Bordas
+<head>
+    <style>
+        p {
+        border: 5px solid red;
+        }
+    </ style>
+</head>
+
+Margin
+<style>
+    div {
+    border: 1px solid black;
+    margin: 25px;
+    background-color: lightblue;
+    }
+</ style>
+
+
+Padding
+<head>
+    <style>
+        div {
+        border: 1px solid black;
+        padding: 25px;
+        background-color: green;
+        color:white;
+        }
+    </style>
+</head>
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
