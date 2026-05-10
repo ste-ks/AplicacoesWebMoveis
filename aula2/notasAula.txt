@@ -99,5 +99,60 @@ Padding
     </style>
 </head>
 -------------------------------------------------------------------------------------------------------
+Box model
+    camadas quadradas que reprentam as distancias entre cada elemento da pagina
+
+        Margin          
+|------------------------|
+|        Border          |
+|    |----------------|  |
+|    |    Padding     |  |
+|    |    |--------|  |  |
+|    |    |Content |  |  |
+|    |    |--------|  |  |  
 -------------------------------------------------------------------------------------------------------
+
+Float
+Left - O elemento flutua à esquerda de seu container
+right - O elemento flutua à direita de seu container
+none - o elemeto não flutua (será exibido exatamente onde ocorre no texto). é padão
+inherit - o elemento herda o valor Float de seu pai
+<style>
+img {
+    float: right;
+}
+</style>
+
+
+Elementos Block
+<address>
+<article>
+<aside>
+<canvas>
+<dd>
+<div>
+<dl>
+<dt>
+<fieldset>
+<figcaption>
+<figure>
+<footer>
+<form>
+<h1>-<h6>
+<header>
+
+<hr>
+<li>
+<main>
+<nav>
+<noscript>
+<ol>
+<output>
+<p>
+<pre>
+<section>
+<table>
+<tfoot>
+<ul>
+<video>
 -------------------------------------------------------------------------------------------------------
