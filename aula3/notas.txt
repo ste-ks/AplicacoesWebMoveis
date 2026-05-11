@@ -1,0 +1,179 @@
+Arvore de documento
+
+<html>
+  <head></head>
+  <body>
+    <div>
+      <header>
+        <h1></h1>
+        <h2></h2>
+      </header>
+      
+      <section>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+      
+      <section>
+        <h3></h3>
+        <pre></pre>
+      </section>
+      
+      <footer>
+        <p>
+          <em></em>
+          <a></a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
+
+
+
+[html]
+                      |
+           ___________|___________
+          |                       |
+       [head]                  [body]
+                                  |
+                                [div]
+          ________________________|________________________
+         |            |                 |                  |
+     [header]     [section]         [section]          [footer]
+      |    |          |                 |    |             |
+    [h1]  [h2]      [ul]              [h3] [pre]          [p]
+                      |                                  /   \
+                ______|______                         [em]   [a]
+               |      |      |
+              [li]   [li]   [li]
+
+
+ELEMENTO PAI        | ELEMENTO FILHO
+------------------------------------------------------------
+html                | head, body
+body                | div
+div                 | header, section, section, footer
+header              | h1, h2
+ul                  | li, li, li
+h3                  | Não tem elemento filho
+
+------------------------------------------------------------
+
+
+----------------------------------------------------------------------------------------------
+Pseudoclasses - Sintaxe
+
+SINTAXE DE PSEUDO-CLASSES CSS
+=============================
+
+ESTRUTURA GENÉRICA:
+selector:pseudo-class {
+    property: value;
+}
+
+EXEMPLO PRÁTICO:
+a:link {
+    color: red;
+}
+
+
+Pseudoclasses — lista
+
+Pseudoclasses
+    :link           destacar link
+    :visited        quando visitado
+    :hover          mouse em cima
+    :active         link ativo
+    :focus          cursor nese e destaca
+    :checked        quando selecionado
+    :enabled        disponivel
+    :disabled       nao disponivel
+
+Pseudoclasses para links
+- A ordem na estilização deve ser:
+ • a:link { }
+ • a:visited { }
+ • a:hover { }
+ • a:active { }
+- Caso inverta a ordem, o efeito não será aplicado conforme o planejado
+
+--------------------
+
+Pseudoelementos
+
+Pseudoelemento
+    ::after
+    ::before
+    ::first-letter
+    ::first-line
+    ::maker
+    ::selection
+
+Podemos formatar para ::first-letter:
+ - propriedades da fonte
+ - propriedades de cor
+ - propriedades de fundo
+ - propriedades de margem
+ - propriedades de preenchimento
+ - propriedades da borda
+ - decoração de texto
+ - vertical-align (somente se "float" for "none")
+ - transformação de texto
+ - altura da linha
+ - float
+ - clear
+ Pode-se alterar a cor de fonte, cor de fundo, cursor e outline.
+
+Podemos aplicar ao ::first-line :
+ - propriedades da fonte
+ - propriedades de cor
+ - propriedades de fundo
+ - espaçamento entre palavras
+ - espaçamento entre letras
+ - decoração de texto
+ - alinhamento vertical
+ - transformação de texto
+ - altura da linha
+ - clear
+
+                selector::pseudo-element {
+                    property: value;
+                }
+
+----------------------------------------------------------------------------------------------------------------
+
+/* Variáveis - Sintaxe */
+
+:root {
+  --dourado: #DEB44B;
+  --branco: #ffffff;
+}
+
+body {
+  background-color: var(--dourado);
+}
+
+h2 {
+  border-bottom: 2px solid var(--dourado);
+}
+
+
+Formatacoes com imagem
+<style>
+    img{
+        border-radius: 10px;
+        opacity: 0.5;
+        display: block;
+        margin: auto;
+    }
+</style>
+----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
