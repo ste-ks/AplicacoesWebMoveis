@@ -1,0 +1,12 @@
+ul li{
+    display: inline;
+    margin-left: 30px;
+    color: white;
+    background-color: black;
+}
+ul + p{
+    font-size: x-large;
+}
+h1~h2{
+    color: red;
+}
