@@ -155,6 +155,10 @@ Pseudoclasses para links
 
 Pseudoelementos
 
+  selector::pseudo-element {
+      property: value;
+  }
+
 Pseudoelemento
     ::after
     ::before
@@ -190,11 +194,22 @@ Podemos aplicar ao ::first-line :
  - altura da linha
  - clear
 
-                selector::pseudo-element {
-                    property: value;
-                }
+
 
 ----------------------------------------------------------------------------------------------------------------
+Outas Formatacoes
+
+Dimensionamento
+.div1 {
+  width: 400px;
+  height: 200px;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+Variáveis
+
+· Podemos utilizar variáveis com CSS, com a função var(). Pode-se utilizar variáveis para definir as cores, evitando a repetição de códigos
 
 /* Variáveis - Sintaxe */
 
