@@ -1,0 +1,184 @@
+O que são objetos?
+
+- Objetos são as estruturas de dados conhecidas como registro. Um registro é uma coleção não ordenada de campos nomeados. Cada campo tem seu próprio nome (ou chave) e um valor atribuído. No caso de objetos JavaScript, esses campos geralmente são chamados de propriedades
+    let exeobj = {
+        nr: 500,
+        str: "palavra"
+    };
+
+Como criar um objeto
+- Sintaxe:
+· nomeObjeto =new construtor(argumento);
+    data = new Data();
+    let livro = new Object();
+
+
+
+Funções construtoras
+
+    const carro = {
+        marca: 'Marca',
+        preco: 0,
+
+    }
+
+    const honda = carro;
+    honda.marca = 'Honda';
+    honda.preco = 244000;
+
+    const nissan = carro;
+    nissan.marca = 'Nissan';
+    nissan.preco = 120000;
+
+Como iterar por um objeto
+
+- O laço for ... in interage sobre propriedades enumeradas de um objeto, na ordem original de inserção. O laço pode ser executado para cada propriedade distinta do objeto 
+- Sintaxe:
+    · for (variavel in objeto) { ...}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Conceito - função
+
+· Uma função é apenas um pedaço separado de código que você nomeia, da mesma forma que você nomeia uma variável. Se você quiser usá-lo em algum lugar, ele é simplesmente referenciado por esse nome (dizemos chamar a função)
+
+Funções - sintaxe
+
+    function nome ([param[, param [, ... param] ]]) {
+        instruções
+    }
+- nome: é o nome da função
+- param: o nome de um argumento a ser passado para a função
+
+    function OlaMundo(){
+        console.log('Ola')
+        console.log('Mundo')
+    }
+    OlaMundo()
+
+Funções - return
+
+- A função termina onde está a palavra return e permite armazenar numa variável o resultado da função
+
+
+Função arrow
+
+- A função de seta (arrow) é uma forma mais curta de uma expressão de função
+    let somar=(n1,n2) =>n1+n2;
+    console.log(somar (2,3));
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Browser Object Model - BOM
+
+- O Browser Object Model (BOM) é um conjunto de objetos que permitem a interação entre JavaScript e o navegador. Ele fornece acesso às características do navegador, como janelas, histórico, cookies e muito mais
+
+Objeto window
+
+- O objeto de nível mais elevado do BOM é o window. Representa uma janela aberta do navegador
+
+Closed
+
+- A propriedade closed retorna o valor booleano true se a janela estiver fechada e false se estiver aberta
+
+
+History
+
+- O objeto history contém as URLs visitadas pelo usuário (na janela do navegador)
+
+MÉTODO     | DESCRIÇÃO
+------------------------------------------------------------
+back()     | Carrega URL anteriormente visitada
+forward()  | Carrega URL visitada depois da URL atual
+go(n)      | Admite número como parâmetro
+length()   | Quantidade
+
+<button onclick="history.back()">Voltar</button>
+
+Open
+
+- O método open() abre uma nova janela. Abrir janelas sem o consentimento do usuário deve ser evitado
+
+Close
+
+- O método close() fecha uma janela
+
+Onload
+
+- O evento onload( ) ocorre quando uma página termina de ser carregada
+
+Document
+
+- A propriedade document é uma referência ao objeto document que representa a marcação HTML de um documento apresentado na janela do navegador. É possível acessar todos os elementos da marcação via script
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Conceito
+
+- A definição do DOM segundo o W3C: "O DOM - Document Object Model é uma interface independente de plataforma e linguagem que permite aos programas e scripts acessar e atualizar dinamicamente a estrutura, o conteúdo e a estilização de documentos" (World Wide Web Consortium)
+
+Representação – DOM
+                        ===================
+
+                              [HTML]
+                                |
+           _____________________|_____________________
+          |                                           |
+        [HEAD]                                      [BODY]
+          |                                           |
+       [title]      __________________________________|__________________________________
+          |        |        |        |        |            |            |                |
+       (texto)   [h1]      [p]      [h2]  [bloquote]      [h2]          |               [ul]
+                  |        |        |         |            |            |                |
+               (texto)  (texto)  (texto)     [p]        (texto)         |         _______|_______
+                           |        |         |            |            |        |               |
+                        [class]    [id]    [href]         [id]          |       [li]            [li]
+                           |                               |            |        |               |
+                        [abbr]                          [small]         |     (texto)         (texto)
+
+Objeto document
+
+- O objeto document representa um documento aberto no navegador. Assim, quando abrimos um documento HTML em um navegador, é criado um objeto documento. Esse objeto é um objeto window e pode ser acessado com a sintaxe window.document. Desta maneira, podemos acessar todos os elementos HTML de uma página HTML
+
+getElement*
+
+· O método getElementById() acessa o elemento DOM identificando o id. ID é identificador único, exclusivo no documento
+
+O getElemenstByClassName()
+
+- Retorna uma lista com todos os elementos que possuem o nome da classe dada
+
+getElementsByTagName
+
+- O getElementsByTagName retorna uma lista com todos os elementos da tag informada
+
+element.style
+
+- A propriedade style dos elementos do DOM permite que se definam regras de estilo. Sintaxe: el.style.propriedade="valor da propriedade"
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Eventos
+
+- Os eventos podem ocorrer advindos da interação do usuário, como o clique num link, ou passar o mouse em cima, ou advindos do navegador, como carregar uma página. Evento é qualquer interação com um elemento HTML, clicar, mover, soltar etc.
+
+EVENTO      | DESCRIÇÃO
+----------------------------------------------------------------------
+click       | Ocorre quando o usuário pressiona o botão esquerdo do mouse
+dclick      | Ocorre quando o usuário pressiona duas vezes o botão esquerdo do mouse
+mousedown   | Ocorre quando o usuário pressiona qualquer um dos botões do mouse
+mouseover   | Ocorre quando o usuário solta qualquer um dos botões do mouse
+mouseout    | Ocorre quando o usuário desloca o ponteiro do mouse de onde estava
+
+EVENTO      | DESCRIÇÃO
+----------------------------------------------------------------------
+mousemove   | Ocorre quando o usuário move o ponteiro do mouse.
+load        | Ocorre quando há o carregamento da página
+unload      | Ocorre quando há o fechamento de uma janela
+scroll      | Ocorre quando o elemento possui barra de rolagem
+focus       | Ocorre quando o elemento recebe foco
+
+eventListener
+
+· O evento eventListener possui os métodos addEventListener e removeEventListener, que nos permitem anexar um manipulador de eventos a um elemento sem sobrescrever os eventos anteriores
+

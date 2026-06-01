@@ -1,0 +1,134 @@
+declaracao de variaveis
+
+let - nao permite mais de uma declaracao com mesmo nome
+var - permite mais de uma declaracao com mesmo nome
+
+Variáveis locais e globais
+
+· Se utilizarmos let e const fora de blocos de códigos, que são delimitados por { }, serão variáveis globais
+
+============================================================
+5. TIPOS DE DADOS - DADOS LITERAIS PRIMITIVOS
+============================================================
+
+Existem seis tipos de dados literais primitivos:
+
+* Boolean   -> true ou false
+* Number    -> números reais (decimais e inteiros)
+* BigInt    -> números inteiros de qualquer tamanho
+* String    -> representa uma sequência de caracteres
+* Undefined -> valor padrão de uma variável, sem valor atribuído
+* Symbol    -> (Tipo de dado único e imutável)
+
+
+Interpolação de expressões
+- let a=5;
+- let b=10;
+- console.log(`O resultado da operação é ${a+b}`);
+
+Métodos
+- length: propriedade que informa o número de caracteres de uma string
+    let str = "JavaScript";
+    str.length;
+
+- charAt(index): informa a posição "index" da string (começam com zero)
+    let str = "JavaScript";
+    str.length;
+    str.charAt(3);
+
+- slice(beginIndex, [opcional] endIndex)
+· Método que retorna uma nova string que é criada a partir dos caracteres entre beginIndex (incluído) e endIndex (excluído)
+· Se endIndex for omitido, a nova string será de beginIndex até o final da string
+
+- split(separator, [opcional] limit)
+· separa em uma lista identificando determinado caractere
+· Divide a string em substrings sempre que um separador é encontrado nessa string e retorna um array dessas substrings (falaremos algumas palavras sobre arrays em um momento), enquanto um limite opcional limit limita o número de substrings adicionadas à lista
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+============================================================
+6. OPERADORES - ATRIBUIÇÃO
+============================================================
+
+Grupo               | Operador  | Descrição
+------------------------------------------------------------
+Atribuição          | =         | Atribuição simples
+                    | +=        | Atribuição de adição
+                    | -=        | Atribuição de subtração
+                    | *=        | Atribuição de multiplicação
+                    | /=        | Atribuição de divisão
+                    | %=        | Atribuição de resto
+                    | **=       | Atribuição de exponenciação
+
+
+Grupo       | Operador  | Descrição
+------------------------------------------------------------
+Relacional  | ==        | Igual
+            | ===       | Exatamente igual (conteúdo e tipo de dado)
+            | !=        | Diferente
+            | !==       | Exatamente diferente (conteúdo e tipo de dado)
+            | <         | Menor
+            | <=        | Menor ou igual
+            | >         | Maior
+            | >=        | Maior ou igual
+
+Grupo        | Operador  | Descrição
+------------------------------------------------------------
+Aritméticos  | +         | Adição
+             | -         | Subtração
+             | *         | Multiplicação
+             | /         | Divisão
+             | %         | Resto da divisão
+             | **        | Exponenciação
+             | ++        | Incremento
+             | --        | Decremento
+
+
+Grupo       | Operador  | Descrição
+------------------------------------------------------------
+Lógicos     | &&        | E (AND)
+            | ||        | OU (OR)
+            | !         | NÃO (NOT)
+
+
+Interação com o usuário
+· Caixa de alerta       - abre alerta
+· Caixa de confirmação  - caixa para acao de confirmacao do usuario
+·Caixa de prompt        - caixa para digitar valores
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+if
+
+if (condição) {//bloco de código a ser executado se a condição for verdadeira
+}
+
+
+Estrutura swich ... case
+    switch (expressão) {
+    
+    case resultado 1:
+        código 1
+        break;
+    case resultado 2:
+
+        código 2
+        break;
+    
+    default:
+        código
+    }
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+for (inicialização; condição; incremento) {
+    bloco de código (faça isso)
+}
+
+
+while
+- O loop while é um dos loops que normalmente usamos quando não sabemos exatamente quantas vezes repetir algo, mas sabemos quando parar
+
+
+do .... while
+- O loop do ... while é muito semelhante ao loop while, a principal diferença é que em um loop while, a condição é verificada antes de cada iteração, e no loop do ... while, a condição é verificada após cada iteração
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
